@@ -9,6 +9,14 @@ export const midasoftConfig = {
   query: process.env.MIDASOFT_QUERY ?? 'Select top 5 * from EMP'
 };
 
+// Define la configuracion base para consumir las APIs integradas de Midasoft.
+export const midasoftApiConfig = {
+  // Usa la URL configurada por entorno o la ruta publica de integracion como base.
+  baseUrl: process.env.MIDASOFT_API_BASE_URL ?? 'https://opepermoda.midasoft.co/apis/integracion/api/v1',
+  // Permite inyectar un token directo cuando ya exista una sesion o un token emitido manualmente.
+  token: process.env.MIDASOFT_API_TOKEN?.trim() || undefined
+};
+
 // Describe los datos necesarios para iniciar sesion en Midasoft.
 export type MidasoftCredentials = {
   // Usuario de Midasoft.
