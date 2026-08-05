@@ -1,0 +1,82 @@
+- main [ref=e2]:
+  - heading "Reporte de Evidencias API - APIPoke" [level=1] [ref=e3]
+  - paragraph [ref=e4]: "Generado: 2026-06-15 13:23:40"
+  - region "Resumen ejecutivo" [ref=e5]:
+    - generic [ref=e6]:
+      - text: Escenarios
+      - strong [ref=e7]: "3"
+    - generic [ref=e8]:
+      - text: Status esperado recibido
+      - strong [ref=e9]: "3"
+    - generic [ref=e10]:
+      - text: Diferencias
+      - strong [ref=e11]: "0"
+  - heading "Panel de métricas" [level=2] [ref=e12]
+  - region "Gráficos de métricas" [ref=e13]:
+    - article [ref=e14]:
+      - heading "Cumplimiento general" [level=3] [ref=e15]
+      - paragraph [ref=e16]: Comparación entre escenarios que cumplen el status esperado y diferencias.
+      - generic [ref=e17]:
+        - generic [ref=e19]: 100%
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - text: "Cumplen:"
+            - strong [ref=e23]: "3"
+          - generic [ref=e24]:
+            - text: "Diferencias:"
+            - strong [ref=e26]: "0"
+    - article [ref=e27]:
+      - heading "Distribución de status HTTP" [level=3] [ref=e28]
+      - paragraph [ref=e29]: Cantidad de responses agrupadas por código HTTP.
+      - generic [ref=e30]:
+        - generic "404" [ref=e31]
+        - strong [ref=e33]: "1"
+      - generic [ref=e34]:
+        - generic "200" [ref=e35]
+        - strong [ref=e37]: "2"
+    - article [ref=e38]:
+      - heading "Tamaño del response" [level=3] [ref=e39]
+      - paragraph [ref=e40]: Peso del body recibido por escenario.
+      - generic [ref=e41]:
+        - generic "1. usuario recibe error 404 cuando consulta un pokemon inexistente" [ref=e42]: 1. usuario recibe error 404 cuando consulta...
+        - strong [ref=e44]: 9 B
+      - generic [ref=e45]:
+        - generic "2. usuario puede consultar un pokemon existente por nombre" [ref=e46]: 2. usuario puede consultar un pokemon exist...
+        - strong [ref=e48]: 431.9 KB
+      - generic [ref=e49]:
+        - generic "3. usuario puede listar una cantidad controlada de pokemon" [ref=e50]: 3. usuario puede listar una cantidad contro...
+        - strong [ref=e52]: 581 B
+    - article [ref=e53]:
+      - heading "Headers recibidos" [level=3] [ref=e54]
+      - paragraph [ref=e55]: Cantidad de headers presentes en cada response.
+      - generic [ref=e56]:
+        - generic "1. usuario recibe error 404 cuando consulta un pokemon inexistente" [ref=e57]: 1. usuario recibe error 404 cuando consulta...
+        - strong [ref=e59]: "24"
+      - generic [ref=e60]:
+        - generic "2. usuario puede consultar un pokemon existente por nombre" [ref=e61]: 2. usuario puede consultar un pokemon exist...
+        - strong [ref=e63]: "30"
+      - generic [ref=e64]:
+        - generic "3. usuario puede listar una cantidad controlada de pokemon" [ref=e65]: 3. usuario puede listar una cantidad contro...
+        - strong [ref=e67]: "27"
+  - generic [ref=e68]:
+    - button "Expandir todo" [ref=e69] [cursor=pointer]
+    - button "Contraer todo" [ref=e70] [cursor=pointer]
+  - region "Detalle de evidencias" [ref=e71]:
+    - group [ref=e72]:
+      - generic "+ 1. usuario recibe error 404 cuando consulta un pokemon inexistente Cumple" [ref=e73] [cursor=pointer]:
+        - text: +
+        - generic [ref=e74]: 1. usuario recibe error 404 cuando consulta un pokemon inexistente
+        - generic [ref=e75]: Cumple
+      - text: + + +
+    - group [ref=e76]:
+      - generic "+ 2. usuario puede consultar un pokemon existente por nombre Cumple" [ref=e77] [cursor=pointer]:
+        - text: +
+        - generic [ref=e78]: 2. usuario puede consultar un pokemon existente por nombre
+        - generic [ref=e79]: Cumple
+      - text: + + +
+    - group [ref=e80]:
+      - generic "+ 3. usuario puede listar una cantidad controlada de pokemon Cumple" [ref=e81] [cursor=pointer]:
+        - text: +
+        - generic [ref=e82]: 3. usuario puede listar una cantidad controlada de pokemon
+        - generic [ref=e83]: Cumple
+      - text: + + +

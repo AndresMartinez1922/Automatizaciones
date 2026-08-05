@@ -1,0 +1,76 @@
+- main [ref=e2]:
+  - heading "Reporte de Evidencias API - APIPoke" [level=1] [ref=e3]
+  - paragraph [ref=e4]: "Generado: 2026-06-15 12:51:04"
+  - region "Resumen ejecutivo" [ref=e5]:
+    - generic [ref=e6]:
+      - text: Escenarios
+      - strong [ref=e7]: "3"
+    - generic [ref=e8]:
+      - text: Status esperado recibido
+      - strong [ref=e9]: "3"
+    - generic [ref=e10]:
+      - text: Diferencias
+      - strong [ref=e11]: "0"
+  - generic [ref=e12]:
+    - button "Expandir todo" [ref=e13] [cursor=pointer]
+    - button "Contraer todo" [ref=e14] [cursor=pointer]
+  - region "Detalle de evidencias" [ref=e15]:
+    - group [ref=e16]:
+      - generic "- 1. usuario recibe error 404 cuando consulta un pokemon inexistente Cumple" [ref=e28] [cursor=pointer]:
+        - text: "-"
+        - generic [ref=e18]: 1. usuario recibe error 404 cuando consulta un pokemon inexistente
+        - generic [ref=e19]: Cumple
+      - generic [ref=e29]:
+        - paragraph [ref=e30]:
+          - strong [ref=e31]: "Fecha/hora:"
+          - text: 2026-06-15 17:51:02
+        - group [ref=e32]:
+          - generic "- Request enviado" [ref=e38] [cursor=pointer]
+          - generic [ref=e39]:
+            - table [ref=e40]:
+              - rowgroup [ref=e41]:
+                - row "Metodo GET" [ref=e42]:
+                  - rowheader "Metodo" [ref=e43]
+                  - cell "GET" [ref=e44]
+                - row "Endpoint pokemon/pokemon-inexistente-xyz" [ref=e45]:
+                  - rowheader "Endpoint" [ref=e46]
+                  - cell "pokemon/pokemon-inexistente-xyz" [ref=e47]
+                - row "URL final https://pokeapi.co/api/v2/pokemon/pokemon-inexistente-xyz" [ref=e48]:
+                  - rowheader "URL final" [ref=e49]
+                  - cell "https://pokeapi.co/api/v2/pokemon/pokemon-inexistente-xyz" [ref=e50]
+            - strong [ref=e51]: Headers
+            - generic [ref=e52]: "{ \"Accept\": \"application/json\" }"
+            - strong [ref=e53]: Body
+            - generic [ref=e54]: Sin body
+        - group [ref=e34]:
+          - generic "- Response recibido" [active] [ref=e55] [cursor=pointer]
+          - generic [ref=e56]:
+            - table [ref=e57]:
+              - rowgroup [ref=e58]:
+                - row "Status esperado 404" [ref=e59]:
+                  - rowheader "Status esperado" [ref=e60]
+                  - cell "404" [ref=e61]
+                - row "Status recibido 404" [ref=e62]:
+                  - rowheader "Status recibido" [ref=e63]
+                  - cell "404" [ref=e64]
+                - row "Content-Type text/plain; charset=utf-8" [ref=e65]:
+                  - rowheader "Content-Type" [ref=e66]
+                  - cell "text/plain; charset=utf-8" [ref=e67]
+            - strong [ref=e68]: Headers
+            - generic [ref=e69]: "{ \"date\": \"Mon, 15 Jun 2026 17:51:41 GMT\", \"content-type\": \"text/plain; charset=utf-8\", \"content-length\": \"9\", \"connection\": \"keep-alive\", \"access-control-allow-origin\": \"*\", \"access-control-expose-headers\": \"X-PokeAPI-Hash,X-PokeAPI-Deploy-Date\", \"cache-control\": \"public, max-age=432000, s-maxage=432000\", \"etag\": \"W/\\\"9-0gXL1ngzMqISxa6S1zx3F4wtLyg\\\"\", \"function-execution-id\": \"gax7491z3vth\", \"server\": \"cloudflare\", \"x-cloud-trace-context\": \"075f3f46c3f807b632702707955aa906;o=1\", \"x-powered-by\": \"Express\", \"accept-ranges\": \"bytes\", \"x-served-by\": \"cache-lga21933-LGA\", \"x-cache\": \"HIT\", \"x-cache-hits\": \"0\", \"x-timer\": \"S1781220804.355354,VS0,VE1\", \"vary\": \"Accept-Encoding, x-fh-requested-host, accept-encoding\", \"alt-svc\": \"h3=\\\":443\\\"; ma=86400\", \"nel\": \"{\\\"report_to\\\":\\\"cf-nel\\\",\\\"success_fraction\\\":0.0,\\\"max_age\\\":604800}\", \"age\": \"325096\", \"cf-cache-status\": \"HIT\", \"report-to\": \"{\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800,\\\"endpoints\\\":[{\\\"url\\\":\\\"https://a.nel.cloudflare.com/report/v4?s=HHjY8cJwCGZxol%2BCDzD%2FLfJJd4TGXiDGLbGqNmZV4nB6DA2DCtCIDKBbxMVUPsEZ6j4oJEfO3esB%2BTgp%2BQeC1JSmJdCKulphpSIW5Vn2GQPaiTuRWDRjk7emvPtt\\\"}]}\", \"cf-ray\": \"a0c36c997924d061-MIA\" }"
+            - strong [ref=e70]: Body
+            - generic [ref=e71]: Not Found
+        - group [ref=e36]:
+          - generic "+ Validaciones realizadas" [ref=e37] [cursor=pointer]
+    - group [ref=e20]:
+      - generic "+ 2. usuario puede consultar un pokemon existente por nombre Cumple" [ref=e21] [cursor=pointer]:
+        - text: +
+        - generic [ref=e22]: 2. usuario puede consultar un pokemon existente por nombre
+        - generic [ref=e23]: Cumple
+      - text: + + +
+    - group [ref=e24]:
+      - generic "+ 3. usuario puede listar una cantidad controlada de pokemon Cumple" [ref=e25] [cursor=pointer]:
+        - text: +
+        - generic [ref=e26]: 3. usuario puede listar una cantidad controlada de pokemon
+        - generic [ref=e27]: Cumple
+      - text: + + +

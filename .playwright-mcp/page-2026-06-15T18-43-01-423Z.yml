@@ -1,0 +1,194 @@
+- main [ref=e2]:
+  - heading "Reporte de Evidencias API - APIPoke" [level=1] [ref=e3]
+  - paragraph [ref=e4]: "Generado: 2026-06-15 13:39:40"
+  - region "Resumen ejecutivo" [ref=e5]:
+    - generic [ref=e6]:
+      - text: Escenarios
+      - strong [ref=e7]: "10"
+    - generic [ref=e8]:
+      - text: Status esperado recibido
+      - strong [ref=e9]: "10"
+    - generic [ref=e10]:
+      - text: Diferencias
+      - strong [ref=e11]: "0"
+  - heading "Panel de métricas" [level=2] [ref=e12]
+  - region "Gráficos de métricas" [ref=e13]:
+    - article [ref=e14]:
+      - heading "Cumplimiento general" [level=3] [ref=e15]
+      - paragraph [ref=e16]: Comparación entre escenarios que cumplen el status esperado y diferencias.
+      - generic [ref=e17]:
+        - generic [ref=e19]: 100%
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - text: "Cumplen:"
+            - strong [ref=e23]: "10"
+          - generic [ref=e24]:
+            - text: "Diferencias:"
+            - strong [ref=e26]: "0"
+    - article [ref=e27]:
+      - heading "Distribución de status HTTP" [level=3] [ref=e28]
+      - paragraph [ref=e29]: Cantidad de responses agrupadas por código HTTP.
+      - generic [ref=e30]:
+        - generic "404" [ref=e31]
+        - strong [ref=e33]: "4"
+      - generic [ref=e34]:
+        - generic "200" [ref=e35]
+        - strong [ref=e37]: "5"
+      - generic [ref=e38]:
+        - generic "400" [ref=e39]
+        - strong [ref=e41]: "1"
+    - article [ref=e42]:
+      - heading "Tamaño del response" [level=3] [ref=e43]
+      - paragraph [ref=e44]: Peso del body recibido por escenario.
+      - generic [ref=e45]:
+        - generic "1. 6. nombre string inexistente devuelve 404" [ref=e46]
+        - strong [ref=e48]: 9 B
+      - generic [ref=e49]:
+        - generic "2. 2. id number valido devuelve el Pokemon correspondiente" [ref=e50]: 2. 2. id number valido devuelve el Pokemon ...
+        - strong [ref=e52]: 431.9 KB
+      - generic [ref=e53]:
+        - generic "3. 1. nombre string valido devuelve un pokemon con tipos correctos" [ref=e54]: 3. 1. nombre string valido devuelve un poke...
+        - strong [ref=e56]: 431.9 KB
+      - generic [ref=e57]:
+        - generic "4. 7. id number igual a cero devuelve 404" [ref=e58]
+        - strong [ref=e60]: 9 B
+      - generic [ref=e61]:
+        - generic "5. 4. limit number valido controla la cantidad de resultados" [ref=e62]: 5. 4. limit number valido controla la canti...
+        - strong [ref=e64]: 581 B
+      - generic [ref=e65]:
+        - generic "6. 5. offset number valido permite paginar resultados" [ref=e66]: 6. 5. offset number valido permite paginar ...
+        - strong [ref=e68]: 446 B
+      - generic [ref=e69]:
+        - generic "7. 3. nombre string en mayusculas se normaliza antes del envio" [ref=e70]: 7. 3. nombre string en mayusculas se normal...
+        - strong [ref=e72]: 431.9 KB
+      - generic [ref=e73]:
+        - generic "8. 8. id number negativo devuelve 404" [ref=e74]
+        - strong [ref=e76]: 9 B
+      - generic [ref=e77]:
+        - generic "9. 10. identificador string alfanumerico invalido devuelve 404" [ref=e78]: 9. 10. identificador string alfanumerico in...
+        - strong [ref=e80]: 9 B
+      - generic [ref=e81]:
+        - generic "10. 9. id number decimal devuelve 400 por formato invalido" [ref=e82]: 10. 9. id number decimal devuelve 400 por f...
+        - strong [ref=e84]: 11 B
+    - article [ref=e85]:
+      - heading "Headers recibidos" [level=3] [ref=e86]
+      - paragraph [ref=e87]: Cantidad de headers presentes en cada response.
+      - generic [ref=e88]:
+        - generic "1. 6. nombre string inexistente devuelve 404" [ref=e89]
+        - strong [ref=e91]: "24"
+      - generic [ref=e92]:
+        - generic "2. 2. id number valido devuelve el Pokemon correspondiente" [ref=e93]: 2. 2. id number valido devuelve el Pokemon ...
+        - strong [ref=e95]: "30"
+      - generic [ref=e96]:
+        - generic "3. 1. nombre string valido devuelve un pokemon con tipos correctos" [ref=e97]: 3. 1. nombre string valido devuelve un poke...
+        - strong [ref=e99]: "30"
+      - generic [ref=e100]:
+        - generic "4. 7. id number igual a cero devuelve 404" [ref=e101]
+        - strong [ref=e103]: "25"
+      - generic [ref=e104]:
+        - generic "5. 4. limit number valido controla la cantidad de resultados" [ref=e105]: 5. 4. limit number valido controla la canti...
+        - strong [ref=e107]: "28"
+      - generic [ref=e108]:
+        - generic "6. 5. offset number valido permite paginar resultados" [ref=e109]: 6. 5. offset number valido permite paginar ...
+        - strong [ref=e111]: "28"
+      - generic [ref=e112]:
+        - generic "7. 3. nombre string en mayusculas se normaliza antes del envio" [ref=e113]: 7. 3. nombre string en mayusculas se normal...
+        - strong [ref=e115]: "30"
+      - generic [ref=e116]:
+        - generic "8. 8. id number negativo devuelve 404" [ref=e117]
+        - strong [ref=e119]: "25"
+      - generic [ref=e120]:
+        - generic "9. 10. identificador string alfanumerico invalido devuelve 404" [ref=e121]: 9. 10. identificador string alfanumerico in...
+        - strong [ref=e123]: "25"
+      - generic [ref=e124]:
+        - generic "10. 9. id number decimal devuelve 400 por formato invalido" [ref=e125]: 10. 9. id number decimal devuelve 400 por f...
+        - strong [ref=e127]: "22"
+  - generic [ref=e128]:
+    - button "Expandir todo" [ref=e129] [cursor=pointer]
+    - button "Contraer todo" [ref=e130] [cursor=pointer]
+  - region "Detalle de evidencias" [ref=e131]:
+    - group [ref=e132]:
+      - generic "- 1. 6. nombre string inexistente devuelve 404 Cumple" [ref=e172] [cursor=pointer]:
+        - text: "-"
+        - generic [ref=e134]: 1. 6. nombre string inexistente devuelve 404
+        - generic [ref=e135]: Cumple
+      - generic [ref=e173]:
+        - paragraph [ref=e174]:
+          - strong [ref=e175]: "Fecha/hora:"
+          - text: 2026-06-15 18:39:38
+        - group [ref=e176]:
+          - generic "- Request enviado" [active] [ref=e182] [cursor=pointer]
+          - generic [ref=e183]:
+            - table [ref=e184]:
+              - rowgroup [ref=e185]:
+                - row "Metodo GET" [ref=e186]:
+                  - rowheader "Metodo" [ref=e187]
+                  - cell "GET" [ref=e188]
+                - row "Endpoint pokemon/pokemon-inexistente-xyz" [ref=e189]:
+                  - rowheader "Endpoint" [ref=e190]
+                  - cell "pokemon/pokemon-inexistente-xyz" [ref=e191]
+                - row "URL final https://pokeapi.co/api/v2/pokemon/pokemon-inexistente-xyz" [ref=e192]:
+                  - rowheader "URL final" [ref=e193]
+                  - cell "https://pokeapi.co/api/v2/pokemon/pokemon-inexistente-xyz" [ref=e194]
+            - strong [ref=e195]: Headers
+            - generic [ref=e196]: "{ \"Accept\": \"application/json\" }"
+            - strong [ref=e197]: Body
+            - generic [ref=e198]: Sin body
+        - group [ref=e178]:
+          - generic "+ Response recibido" [ref=e179] [cursor=pointer]
+        - group [ref=e180]:
+          - generic "+ Validaciones realizadas" [ref=e181] [cursor=pointer]
+    - group [ref=e136]:
+      - generic "+ 2. 2. id number valido devuelve el Pokemon correspondiente Cumple" [ref=e137] [cursor=pointer]:
+        - text: +
+        - generic [ref=e138]: 2. 2. id number valido devuelve el Pokemon correspondiente
+        - generic [ref=e139]: Cumple
+      - text: + + +
+    - group [ref=e140]:
+      - generic "+ 3. 1. nombre string valido devuelve un pokemon con tipos correctos Cumple" [ref=e141] [cursor=pointer]:
+        - text: +
+        - generic [ref=e142]: 3. 1. nombre string valido devuelve un pokemon con tipos correctos
+        - generic [ref=e143]: Cumple
+      - text: + + +
+    - group [ref=e144]:
+      - generic "+ 4. 7. id number igual a cero devuelve 404 Cumple" [ref=e145] [cursor=pointer]:
+        - text: +
+        - generic [ref=e146]: 4. 7. id number igual a cero devuelve 404
+        - generic [ref=e147]: Cumple
+      - text: + + +
+    - group [ref=e148]:
+      - generic "+ 5. 4. limit number valido controla la cantidad de resultados Cumple" [ref=e149] [cursor=pointer]:
+        - text: +
+        - generic [ref=e150]: 5. 4. limit number valido controla la cantidad de resultados
+        - generic [ref=e151]: Cumple
+      - text: + + +
+    - group [ref=e152]:
+      - generic "+ 6. 5. offset number valido permite paginar resultados Cumple" [ref=e153] [cursor=pointer]:
+        - text: +
+        - generic [ref=e154]: 6. 5. offset number valido permite paginar resultados
+        - generic [ref=e155]: Cumple
+      - text: + + +
+    - group [ref=e156]:
+      - generic "+ 7. 3. nombre string en mayusculas se normaliza antes del envio Cumple" [ref=e157] [cursor=pointer]:
+        - text: +
+        - generic [ref=e158]: 7. 3. nombre string en mayusculas se normaliza antes del envio
+        - generic [ref=e159]: Cumple
+      - text: + + +
+    - group [ref=e160]:
+      - generic "+ 8. 8. id number negativo devuelve 404 Cumple" [ref=e161] [cursor=pointer]:
+        - text: +
+        - generic [ref=e162]: 8. 8. id number negativo devuelve 404
+        - generic [ref=e163]: Cumple
+      - text: + + +
+    - group [ref=e164]:
+      - generic "+ 9. 10. identificador string alfanumerico invalido devuelve 404 Cumple" [ref=e165] [cursor=pointer]:
+        - text: +
+        - generic [ref=e166]: 9. 10. identificador string alfanumerico invalido devuelve 404
+        - generic [ref=e167]: Cumple
+      - text: + + +
+    - group [ref=e168]:
+      - generic "+ 10. 9. id number decimal devuelve 400 por formato invalido Cumple" [ref=e169] [cursor=pointer]:
+        - text: +
+        - generic [ref=e170]: 10. 9. id number decimal devuelve 400 por formato invalido
+        - generic [ref=e171]: Cumple
+      - text: + + +

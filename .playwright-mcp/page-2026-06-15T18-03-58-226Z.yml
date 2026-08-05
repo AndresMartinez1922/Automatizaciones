@@ -1,0 +1,35 @@
+- main [ref=e2]:
+  - heading "Reporte de Evidencias API - APIPoke" [level=1] [ref=e3]
+  - paragraph [ref=e4]: "Generado: 2026-06-15 12:51:04"
+  - region "Resumen ejecutivo" [ref=e5]:
+    - generic [ref=e6]:
+      - text: Escenarios
+      - strong [ref=e7]: "3"
+    - generic [ref=e8]:
+      - text: Status esperado recibido
+      - strong [ref=e9]: "3"
+    - generic [ref=e10]:
+      - text: Diferencias
+      - strong [ref=e11]: "0"
+  - generic [ref=e12]:
+    - button "Expandir todo" [ref=e13] [cursor=pointer]
+    - button "Contraer todo" [ref=e14] [cursor=pointer]
+  - region "Detalle de evidencias" [ref=e15]:
+    - group [ref=e16]:
+      - generic "+ 1. usuario recibe error 404 cuando consulta un pokemon inexistente Cumple" [ref=e17] [cursor=pointer]:
+        - text: +
+        - generic [ref=e18]: 1. usuario recibe error 404 cuando consulta un pokemon inexistente
+        - generic [ref=e19]: Cumple
+      - text: + + +
+    - group [ref=e20]:
+      - generic "+ 2. usuario puede consultar un pokemon existente por nombre Cumple" [ref=e21] [cursor=pointer]:
+        - text: +
+        - generic [ref=e22]: 2. usuario puede consultar un pokemon existente por nombre
+        - generic [ref=e23]: Cumple
+      - text: + + +
+    - group [ref=e24]:
+      - generic "+ 3. usuario puede listar una cantidad controlada de pokemon Cumple" [ref=e25] [cursor=pointer]:
+        - text: +
+        - generic [ref=e26]: 3. usuario puede listar una cantidad controlada de pokemon
+        - generic [ref=e27]: Cumple
+      - text: + + +

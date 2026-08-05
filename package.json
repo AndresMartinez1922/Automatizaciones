@@ -1,0 +1,30 @@
+{
+  "name": "primer-casos-de-prueba",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "playwright test",
+    "test": "playwright test",
+    "test:midasoft": "playwright test tests/midasoft-consultas-admin.spec.ts --project=chromium",
+    "test:midasoft:login": "playwright test tests/midasoft-login.spec.ts --project=chromium",
+    "test:midasoft:admin": "playwright test tests/midasoft-consultas-admin-acceso.spec.ts --project=chromium",
+    "test:midasoft:base": "playwright test tests/casos/midasoft-login-consultas-admin.spec.ts --project=chromium",
+    "test:midasoft:base:report": "playwright test tests/casos/midasoft-login-consultas-admin.spec.ts --project=chromium && playwright show-report",
+    "test:midasoft:crea-requisicion": "playwright test tests/casos/midasoft-crea-requisicion-personal.spec.ts --project=chromium",
+    "test:midasoft:requisicion-solicitante": "playwright test tests/casos/midasoft-crea-requisicion-y-nuevo-solicitante.spec.ts --project=chromium",
+    "test:midasoft:222898": "playwright test tests/casos/222898-reporte-de-abonos-a-prestamos.spec.ts --project=chromium",
+    "test:midasoft:nuevo-solicitante:debug": "playwright test tests/debug/midasoft-nuevo-solicitante.debug.spec.ts --project=chromium --headed",
+    "test:midasoft:full": "playwright test tests/midasoft-consultas-admin.spec.ts --project=chromium",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.2",
+    "docx": "^9.6.1",
+    "xlsx": "^0.18.5"
+  }
+}
